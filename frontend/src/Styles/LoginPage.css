@@ -8,6 +8,17 @@
   align-items: center;
 }
 
+.signuplink{
+  font-size: 12px;
+  align-items: center;
+  color: #98a2b3;
+}
+.row p{
+  color: red;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
 .login-container {
   height: 25rem;
   width: 30rem;
@@ -85,6 +96,7 @@
     height: 100%;
     width: 100%;
     border-radius: 8px;
+    margin-top: 10px;
     background-color:#2d31a6;
   }
 

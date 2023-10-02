@@ -22,8 +22,8 @@
   color: deeppink;
 }
 
-.logo span{
-    color: blueviolet;
+.logo span {
+  color: blueviolet;
 }
 
 /* Category select box styles */
@@ -59,57 +59,57 @@
   transform: translateY(-50%);
 }
 
-        /* Avatar container */
-        .avatar-container {
-            display: flex;
-            align-items: center;
-        }
+/* Avatar container */
+.avatar-container {
+  display: flex;
+  align-items: center;
+}
 
-        /* Rounded avatar icon */
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #fff;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-        }
+/* Rounded avatar icon */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
 
-        /* Dropdown menu styles */
-        .dropdown {
-            position: relative;
-            margin-left: 20px;
-        }
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  margin-left: 20px;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #fff;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-        /* Links within the dropdown */
-        .dropdown-content a {
-            color: #333;
-            padding: 10px;
-            text-decoration: none;
-            display: block;
-        }
+/* Links within the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
 
-        /* Change link color on hover */
-        .dropdown-content a:hover {
-            background-color: #333;
-            color: #fff;
-        }
+/* Change link color on hover */
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #fff;
+}
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {

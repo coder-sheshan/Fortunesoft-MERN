@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styles/RegisterPage.css'
+import "../Styles/RegisterPage.css";
 
 const RegistrationPage = () => {
   return (
@@ -16,6 +16,7 @@ const RegistrationPage = () => {
             </label>
             <div className="row">
               <input
+                style={{ textIndent: "15px" }}
                 type="text"
                 placeholder="Enter your FullName"
                 name="fname"
@@ -28,6 +29,7 @@ const RegistrationPage = () => {
 
             <div className="row">
               <input
+                style={{ textIndent: "15px" }}
                 type="password"
                 placeholder="Enter your password"
                 name="password"
@@ -40,6 +42,7 @@ const RegistrationPage = () => {
 
             <div className="row">
               <input
+                style={{ textIndent: "15px" }}
                 type="password"
                 placeholder="Enter your confirm password"
                 name="confirmpassowrd"

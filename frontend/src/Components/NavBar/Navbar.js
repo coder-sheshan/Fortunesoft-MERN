@@ -1,28 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../Styles/Navbar.css";
+import { useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ search, setSearch }) => {
+  const location = useLocation();
+  const routePath = location.pathname;
+  console.log(routePath);
+
   return (
     <div>
-      <header className="header">
-        <div className="navbar">
-          <a href="/" className="logo">
-            WOOKIE <span>MOVIES</span>
-          </a>
-          <select className="category-select">
-            <option disabled selected>
-              Select a Genres:
-            </option>
-            <option value="action">Action</option>
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-          </select>
-          <div className="search-box">
-            <span className="search-icon">&#128270;</span>
-            <input type="text" className="search-input" placeholder="Search..." />
-          </div>
-        </div>
-      </header>
+      {routePath != "/" && (
+        <>
+          <header className="header">
+            <div className="navbar">
+              {/* logo */}
+              <a href="/" className="logo">
+                WOOKIE <span>MOVIES</span>
+              </a>
+              {/* searchbox */}
+              <div className="search-box">
+                <span className="search-icon">&#128270;</span>
+                <input
+                  onChange={(e) => {
+                    setSearch(e.target.value);
+                  }}
+                  value={search}
+                  type="text"
+                  className="search-input"
+                  placeholder="Search..."
+                />
+              </div>
+            </div>
+          </header>
+        </>
+      )}
     </div>
   );
 };
