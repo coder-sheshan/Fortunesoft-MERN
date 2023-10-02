@@ -5,7 +5,7 @@ const db = require('./Config/db.config')
 const app = express();
 //cors
 const cors = require("cors");
-const whitelist = ['http://localhost:3000']
+const whitelist = ['https://fortunesoft-tube.vercel.app/']
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== -1) {

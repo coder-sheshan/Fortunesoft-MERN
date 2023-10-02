@@ -11,6 +11,7 @@ const customStyles = {
     top: "50%",
     left: "50%",
     right: "auto",
+    padding:'1px',
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
@@ -90,10 +91,14 @@ const MainCard = () => {
       >
         <button
           style={{
-            height: "30px",
-            width: "30px",
-            backgroundColor: "red",
+            backgroundColor: 'red',
+            color: 'white',
+            border: 'none',
+            padding: '5px 10px',
+            cursor: 'pointer',
+            borderRadius: '5px',
             float: "right",
+            marginBottom:"5px"
           }}
           onClick={closeModal}
         >
