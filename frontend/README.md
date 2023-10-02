@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Frontend Repository ReadMe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This ReadMe file provides instructions for setting up and running the frontend part of the project. Please follow the steps below to get started.
 
-## Available Scripts
+## Project Overview
+ The goal of this frontend repository is to implement the user interface and functionality required for the problem statement. Below are the dependencies used in this project:
 
-In the project directory, you can run:
+- Testing library for Jest DOM assertions.
+- Testing library for React components.
+- Testing library for user events in React components.
+- Promise-based HTTP client for making API requests.
+- Library for building forms in React.
+- React library.
+- React library for rendering components to the DOM.
+- Library for lazy-loading images in React.
+- Library for creating modals in React.
+- React component for playing videos.
+- Library for routing in React applications.
+- React scripts for development, building, testing, and ejecting.
+- Library for displaying toast notifications in React.
+- Library for displaying pop-up dialogs.
+- `Library for measuring web vitals in modern web applications.
+- Schema validation library.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow these steps to set up and run the project on your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the Repository
 
-### `npm test`
+Clone this repository to your local machine using the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+git clone <repository-url>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate to the project directory and install the required npm packages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+cd frontend
+npm install
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Start the Development Server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can start the development server with the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+This will launch the application in development mode. You can view it in your web browser at [http://localhost:3000](http://localhost:3000).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Build for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To build the project for production, use the following command:
 
-### Code Splitting
+bash
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+This command will create a `build` folder with optimized production-ready assets.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 5. Testing
 
-### Making a Progressive Web App
+You can run tests using the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+bash
+npm test
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This will execute the test suite for the project.
 
-### Deployment
+### 6. Eject (Optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you need to customize the build configuration, you can eject from `react-scripts`. Use this command to eject:
 
-### `npm run build` fails to minify
+bash
+npm run eject
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Please note that ejecting is a one-way operation and should be done with caution.
+
+## Additional Notes
+
+Make sure to refer to the problem statement and design outline provided in the ZIP file for specific project requirements and design details.
+
+If you have any questions or encounter issues, feel free to reach out to the project team for assistance.
+
+Thank you for your contribution to this project!
