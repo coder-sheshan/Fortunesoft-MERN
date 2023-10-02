@@ -1,7 +1,13 @@
 .moviecard{
     box-sizing: border-box;
 }
-
+.card-links{
+    margin: 5px;
+    padding: 5px;
+}
+.viewpage{
+    height: 100vh;
+}
 .card-row_poster{
     width: 100%;
     object-fit: contain;
@@ -27,6 +33,8 @@
 
 .card-row_posterLarge{
     max-height: 250px;
+    background-color: red;
+    width: fit-content;
 }
 
 .card-row_posterLarge:hover{
@@ -84,3 +92,6 @@
     height: 7.4rem;
     background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
 }
+
+
+

@@ -25,20 +25,6 @@
   }
   
   
-  .Regis-container {
-    height: 35rem;
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 63px, 104px, 104px, 104px;
-    background: rgb(249, 247, 249);
-    -webkit-box-shadow: 1px 0px 28px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 0px 28px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: 1px 0px 28px -4px rgba(0, 0, 0, 0.75);
-    border-radius: 12px;
-  }
   
   .regis-header {
     font-family: Arial, Helvetica, sans-serif;
@@ -67,7 +53,7 @@
   .regis-form {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    /* height: 400px; */
     width: 360px;
   }
   
@@ -77,18 +63,19 @@
   }
   
   .regis-container form .row input {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     border-radius: 8px;
     border: 1px;
+    line-height: 30px;
     padding: 10px, 14px, 10px, 14px;
   }
   
   .regis-container label {
-    margin-bottom: 5px;
+    margin-top: 15px;
     font-weight: 500px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 25px;
   }
   
   .regis-container form .row {
@@ -97,9 +84,10 @@
   }
   
   .regis-container form .row button{
-      height: 100%;
       width: 100%;
       border-radius: 8px;
+      line-height: 30px;
+      margin-top: 10px;
       background-color:#2d31a6;
     }
   
@@ -113,7 +101,7 @@
 
   @media only screen and (max-width: 768px) {
     .regis-container {
-      height: 30rem;
+      height: 35rem;
       width: 20rem;
       display: flex;
       flex-direction: column;

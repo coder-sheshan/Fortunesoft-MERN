@@ -1,7 +1,7 @@
 import axios, { AxiosRequestHeaders } from "axios";
 
 export const Axios = axios.create({
-  baseURL: "http://localhost:5000/api/v1/user",
+  baseURL: "https://fortunesoft-service.onrender.com/api/v1/user",
   timeout: 50000,
   headers: {
     "Content-Type": "application/json",

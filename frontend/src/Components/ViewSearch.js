@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const ViewSearch = ({searchresult}) => {
     const navigate = useNavigate();
   return (
-    <div>
+    <div className="viewpage">
       <div className="moviecard">
         <div className="card-row">
           <div className="card-row_posters">

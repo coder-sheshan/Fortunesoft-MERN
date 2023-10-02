@@ -3,12 +3,11 @@ import "../../Styles/MovieCard.css";
 import { useLocation } from "react-router-dom";
 import { Axios } from "../../Data/Axios";
 import Modal from "react-modal";
-import ReactPlayer from 'react-player';
-
+import ReactPlayer from "react-player";
 
 const customStyles = {
   content: {
-    backgroundColor:'black',
+    backgroundColor: "black",
     top: "50%",
     left: "50%",
     right: "auto",
@@ -29,8 +28,6 @@ const MainCard = () => {
   let closeModal = () => {
     setIsOpen(false);
   };
-
-
 
   const location = useLocation();
 
@@ -73,6 +70,13 @@ const MainCard = () => {
           <button onClick={openModal} className="card-banner_button">
             Play
           </button>
+          <button className="card-banner_button">{movieresult?.length}</button>
+          {movieresult?.genres?.map((gen) => {
+            return(<button className="card-banner_button">{gen}</button>)
+          })}
+          <div style={{display:'flex'}}>
+          <p className="card-links">{movieresult?.imdb_rating}&nbsp;<span>/</span>&nbsp;{movieresult?.classification}&nbsp;<span>/</span>&nbsp;{movieresult?.director}&nbsp;<span>/</span>&nbsp;{movieresult?.cast}&nbsp;</p>
+          </div>
         </div>
         <div className="card-banner_description">{movieresult?.overview}</div>
       </div>
@@ -84,8 +88,24 @@ const MainCard = () => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <button style={{height:'30px' , width:'30px', backgroundColor:'red', float:'right'}} onClick={closeModal}><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg></button>
-        <ReactPlayer url='<https://www.youtube.com/watch?v=6wPCjwNTPX4>' />
+        <button
+          style={{
+            height: "30px",
+            width: "30px",
+            backgroundColor: "red",
+            float: "right",
+          }}
+          onClick={closeModal}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+          </svg>
+        </button>
+        <ReactPlayer url="<https://www.youtube.com/watch?v=6wPCjwNTPX4>" />
       </Modal>{" "}
     </div>
   );

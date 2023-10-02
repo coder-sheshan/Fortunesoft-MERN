@@ -14,7 +14,7 @@ const Navbar = ({ search, setSearch }) => {
           <header className="header">
             <div className="navbar">
               {/* logo */}
-              <a href="/" className="logo">
+              <a href="/movies" className="logo">
                 WOOKIE <span>MOVIES</span>
               </a>
               {/* searchbox */}

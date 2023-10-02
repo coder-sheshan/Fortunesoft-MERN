@@ -8,6 +8,8 @@ import RegistrationPage from "./Screens/RegistrationPage";
 import PageNotFound from "./Screens/PageNotFound";
 import MainCard from "./Components/MainCard/MainCard";
 import Navbar from "./Components/NavBar/Navbar";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function App() {
   
@@ -38,6 +40,7 @@ function App() {
         <Route path="/playmovie" element={<MainCard  />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

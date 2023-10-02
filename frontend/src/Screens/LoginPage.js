@@ -4,10 +4,15 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Axios } from "../Data/Axios";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+const notify = (message) => toast(message);
+
 
   useEffect(() => {
     localStorage.removeItem("signedJWT");
@@ -16,8 +21,7 @@ const LoginPage = () => {
 
   const validateSchema = Yup.object().shape({
     userName: Yup.string()
-      .email("Please enter a valid email")
-      .required("Please enter your password"),
+      .required("Please enter a valid username"),
     password: Yup.string().required("Please enter your password"),
   });
 
@@ -26,13 +30,14 @@ const LoginPage = () => {
       userName: "",
       password: "",
     },
-    // validationSchema: validateSchema,
+    validationSchema: validateSchema,
     onSubmit: (values, { resetForm }) => {
       console.log(values);
       setLoading(true);
       submitForm(values);
     },
   });
+
 
   const submitForm = async (data) => {
     try {
@@ -46,12 +51,14 @@ const LoginPage = () => {
         let token = response.data.token;
         JSON.stringify(token);
         localStorage.setItem("signedJWT", token);
+        notify("successfully logedIn");
         navigate("/movies");
       }
       setLoading(false);
     } catch (err) {
       setLoading(false);
       console.log("Some erro in submitting form ", err);
+      notify("something Error Invalid Credentials")
     }
   };
   return (
