@@ -15,7 +15,6 @@ const MovieCard = () => {
         const response = await Axios.get("/home");
         setGenere(response.data);
         console.log(response.data);
-        // console.log(genere.emtArr.map((e) => e.map((f) => f)))
       } catch (err) {
         console.log(err);
       }

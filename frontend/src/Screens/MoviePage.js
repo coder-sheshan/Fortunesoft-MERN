@@ -9,8 +9,6 @@ import { Axios } from "../Data/Axios";
 
 
 const MoviePage = ({search, setSearch, searchresult, setSearchResult }) => {
-  // const [search, setSearch] = useState("");
-  // const [searchresult, setSearchResult] = useState([]);
 
   const navigate = useNavigate();
 
@@ -21,20 +19,6 @@ const MoviePage = ({search, setSearch, searchresult, setSearchResult }) => {
     }
   }, []);
 
-  // useEffect(() => {
-  //   if(search?.length > 2){
-  //     const apiCall = async (id) => {
-  //       try {
-  //         const response = await Axios.get(`/search/${search}`);
-  //         setSearchResult(response.data)
-  //         console.log(response.data);
-  //       } catch (err) {
-  //         console.log(err);
-  //       }
-  //     };
-  //     apiCall();
-  //   }
-  // },[search])
   return (
     <div className="moviepage">
       {search?.length == 0 && (
