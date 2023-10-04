@@ -9,7 +9,7 @@ const Navbar = ({ search, setSearch }) => {
 
   return (
     <div>
-      {routePath != "/" && (
+      {routePath != "/" && routePath != "/registration" && (
         <>
           <header className="header">
             <div className="navbar">
